@@ -1,0 +1,123 @@
+.homepageCard {
+    display: grid;
+    align-items: center;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: row;
+    margin-top: var(--space-component-large);
+}
+
+.contentRegion {
+    font-size: var(--fontSize-3);
+    padding: var(--space-5) var(--space-edge);
+}
+
+.contentRegion :first-child {
+    margin-top: var(--space-none);
+}
+
+.blueContent {
+    background: url(./background-homepagecard-content.jpg);
+    background-size: cover;
+}
+.blueContent * {
+    color: var(--color-text-invert);
+}
+.whiteContent {
+    background: var(--color-background-primary);
+}
+
+.homepageRegion {
+    width: 100%;
+}
+
+.textHighlight {
+    background: var(--color-homepageCard-background);
+    color: var(--color-text-invert);
+    padding: var(--space-5) var(--space-edge);
+
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.flexLeft {
+    justify-content: flex-start;
+}
+
+.flexCenter {
+    justify-content: center;
+    align-items: center;
+}
+
+.imageHighlight {
+    background-size: cover;
+}
+.flexCenter .stat {
+    text-align: center;
+}
+.statValue {
+    font-size: var(--fontSize-7);
+}
+.statLabel {
+    font-size: var(--fontSize-2);
+    font-weight: var(--fontWeight-bold);
+    margin-top: var(--space-component-small);
+}
+
+.homepageCard ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0;
+}
+  
+.homepageCard ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--color-homepageCard-background); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: 0; /* Also needed for space (tweak if needed) */
+}
+
+@media (min-width: 768px) {
+
+    .textHighlight {
+        flex-direction: row;
+    }
+    .stat {
+        flex: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .homepageCard { 
+        grid-auto-flow: column;
+        max-width: 1920px;
+        margin-left: var(--space-auto);
+        margin-right: var(--space-auto);
+    }
+    .contentRegion {
+        grid-column: 1/span 8;
+        grid-row: 1;
+        padding: var(--space-12) var(--space-xxlarge) var(--space-12) clamp(1rem, 15vw - 6.5rem, 12.5rem);
+    }
+
+    .whiteContent {
+        padding-top: var(--space-none);
+        padding-bottom: var(--space-none);
+    }
+
+    .homepageRegion {
+        grid-column: 8/span 4;
+        grid-row: 1;
+    }
+
+    .textHighlight {
+        padding: var(--space-8);
+    }
+
+    .stat:nth-child(n+3) {
+        margin-top: var(--space-xlarge);
+    }
+}

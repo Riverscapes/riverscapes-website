@@ -1,0 +1,81 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    width: 100%;
+}
+
+.menuList {
+    list-style-type: none;
+    margin-left: var(--space-none);
+    padding-left: var(--space-none);
+}
+
+.invert a {
+    color: var(--color-text-invert);
+}
+
+.invert .mainMenuSmall a{
+    color: var(--color-text);
+}
+
+.mainMenuLarge {
+    display: none;
+}
+
+.mainMenu :global .MuiButton-text {
+    color: var(--color-text-invert);
+}
+.buttonGroup {
+    padding: var(--space-1);
+}
+
+.buttonGroup :first-child {
+    padding-right: 0;
+}
+
+.menuButton {
+    color: var(--color-text-invert);
+    text-transform: none;
+}
+.paperMenu {
+    padding: var(--space-2);
+    min-width: var(--space-xlarge);
+}
+
+.dropdownMenuItem {
+    border-bottom: var(--border-width-thin) var(--border-style) var(--color-separator);
+}
+
+.dropdownMenuItemLink {
+    display: flex;
+    align-items: center;
+}
+
+.menuIcon {
+    fill: var(--color-heading-primary);
+}
+
+@media (min-width: 1520px) {
+
+    .mainMenuLarge {
+        display: flex;
+        gap: var(--space-2);
+    }
+    .mainMenuSmall {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+    }
+
+    .menuFull {
+        gap: var(--space-2);
+    }
+
+    .horizontal {
+        flex-direction: row;
+    }
+}

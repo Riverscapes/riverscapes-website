@@ -1,0 +1,44 @@
+.pageLayout {
+    container-type: inline-size;
+    container-name: pageLayout;
+
+    padding-bottom: var(--space-4);
+}
+.header {}
+.contentRegion {
+    display: grid;
+    grid-auto-flow: row;
+    margin: var(--space-none) var(--space-auto);
+    padding-left: var(--space-edge);
+    padding-right: var(--space-edge);
+    max-width: var(--maxWidth-content);
+    grid-row: 2;
+}
+
+.contentRegion :global .gatsby-resp-image-wrapper,
+.contentRegion :global img {
+    margin: var(--space-component-large) var(--space-none);
+}
+
+.sidebar {
+    margin-top: var(--space-component);
+    margin-bottom: var(--space-component);
+    grid-row: 1;
+}
+
+@container pageLayout (min-width: 980px) {
+
+    .contentRegion {
+        grid-auto-flow: column;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .pageContent {
+        grid-column: 1/span 8;
+        grid-row: 1;
+    }
+
+    .sidebar {
+        grid-column: 10/span 3;
+        grid-row: 1;
+    }
+}

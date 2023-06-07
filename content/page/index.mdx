@@ -1,0 +1,216 @@
+---
+title: Home
+date: "2023-05-20T22:12:03.284Z"
+description: "Riverscapes website"
+banner: false
+isHome: true
+---
+
+import { Link, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+
+import { Container, Divider, Grid, Card, CardActionArea, CardMedia, CardContent, Typography } from '@mui/material'
+
+import Button from "../../src/components/button"
+import Hero from "../../src/components/hero"
+import HomepageCard, { HomepageCardContent, HomepageCardHighlight, HomepageCardStat} from "../../src/components/homepageCard"
+import Layout from "../../src/components/layout"
+
+import HeroImage from '../../src/images/background-hero.jpg'
+import CardImage from '../../src/images/card-image.jpg'
+import LogoNASA from '../../src/images/logo-nasa.png'
+
+<Hero
+    image={HeroImage}
+>
+> Our survival depends on the availability of clean, fresh water delivered through healthy riverscapes. But riverscapes are increasingly degraded. And the climate crisis could make it worse.
+
+The Riverscapes Consortium is dedicated to changing the trajectory of this story by equipping members with what they need to help restore riverscapes around the world.        
+</Hero>
+<Container maxWidth="xl">
+    <Grid container space={2}>
+        <Grid item md={3} lg={2} />
+        <Grid item xs={12} md={6}>
+            # Learn
+            The Riverscapes Consortium has the people, tools, and data that can help. But first, it’s critical to understand our relationship with riverscapes.
+            ### What is a riverscape?
+          </Grid>
+        </Grid>
+        <Grid container space={2}>
+            <Grid item md={5} lg={4} />
+            <Grid item xs={12}  md={6}>
+                <StaticImage
+                layout="fullWidth"
+                formats={["auto", "webp", "avif"]}
+                src='../images/what-is-riverscape.jpg'
+                quality={95}
+                alt="illustration"
+                placeholder="none"
+                />
+            </Grid>
+        </Grid>
+        <Grid container space={2}>
+            <Grid item md={3} lg={2} />
+            <Grid item xs={12} md={6}>
+                Over time, the idea of what a river should be caught hold—and perhaps you have an image in your mind of a long, winding channel flowing effortlessly through the landscape. We would argue this image may be part of the problem. Because rivers are more than a channel that delivers water. A healthy riverscape is an integrated system within a valley bottom, frequently connected to their floodplains, supporting vibrant ecosystems of wildlife habitat, wetlands, and vegetation.
+                <Button to="/about-us/">Learn more about riverscapes</Button>
+            </Grid>
+        </Grid>
+      </Container>
+      <HomepageCard>
+        <HomepageCardContent background="blue">
+            ## Solve
+            We want to help you solve complex ecosystem challenges related to riverscapes in a number of ways:
+
+            - Contribute to the Code Repositories, and Data Warehouses
+            - Share a restoration design, analysis, or model-run
+            - Contribute to a repeat photo-series in the Repeat Photo App (phlux)
+            - Join an existing Riverscapes Consortium project or start your own
+            - Access and share any riverscapes specific data, tool or model output or analysis
+
+            Whether you are a riverscape practitioner, or simply curious about how to take the first step in helping solve this urgent challenge, we encourage you to explore our tools and become a member.
+
+            <Button to="/our-work/">Explore our work</Button>
+        </HomepageCardContent>
+        <HomepageCardHighlight type="text" align="center">
+          <HomepageCardStat
+            value="42+"
+            label="Label here"
+          />
+          <HomepageCardStat
+            value="133%"
+            label="Label here"
+          />
+          <HomepageCardStat
+            value="10,000"
+            label="Some more label here"
+          />
+          <HomepageCardStat
+            value="27"
+            label="Other stat label here"
+          />
+        </HomepageCardHighlight>
+      </HomepageCard>
+      <Container maxWidth="xl">
+        ### Stories & updates
+        <Grid container spacing={4} sx={{mt: 3}}>
+          <Grid item xs={12} md={6} lg={3}>
+            <Card>
+              <CardActionArea
+                component={Link}
+                to="/our-work/">
+                <CardMedia
+                  component="img"
+                  image={CardImage}
+                  alt="Sample image"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">Card Heading</Typography>
+                  <Typography variant="body2" color="text.secondary">Card content</Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item xs={12} md={6} lg={3}>
+            <Card>
+              <CardActionArea
+                component={Link}
+                to="/our-work/">
+                <CardMedia
+                  component="img"
+                  image={CardImage}
+                  alt="Sample image"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">Card Heading</Typography>
+                  <Typography variant="body2" color="text.secondary">Card content</Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item xs={12} md={6} lg={3}>
+            <Card>
+              <CardActionArea
+                component={Link}
+                to="/our-work/">
+                <CardMedia
+                  component="img"
+                  image={CardImage}
+                  alt="Sample image"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">Card Heading</Typography>
+                  <Typography variant="body2" color="text.secondary">Card content</Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item xs={12} md={6} lg={3}>
+            <Card>
+              <CardActionArea
+                component={Link}
+                to="/our-work/">
+                <CardMedia
+                  component="img"
+                  image={CardImage}
+                  alt="Sample image"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">Card Heading</Typography>
+                  <Typography variant="body2" color="text.secondary">Card content</Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+        </Grid>
+      </Container>
+      <HomepageCard>
+        <HomepageCardContent background="white">
+          ## Support
+          
+          Join us in our mission to create vibrant, healthy riverscapes where thriving ecosystems and human societies can coexist and benefit one another for a more resilient future.
+
+          We want to support anyone taking action to improve riverscapes health and work collectively to advance the science and build a robust community equipped to meet the urgent threats to riverscapes around the world. The opportunity to effect durable change is now.
+          
+          <Button to="/about">Get involved</Button>
+        </HomepageCardContent>
+        <HomepageCardHighlight type="text">
+          <HomepageCardStat
+            value='"Instead of spending $1 million per stream mile, maybe you spend $10,000."'
+            label="Joe Wheaton, Utah State University" />
+        </HomepageCardHighlight>
+      </HomepageCard>
+      <Container maxWidth="xl">
+        <Divider>Our supporters</Divider>
+        <Grid container spacing={4} justifyContent="center" alignItems="center" sx={{mt: 3}}>
+          <Grid item xs={6} md={4} lg={2}>
+            <img src={LogoNASA} width="150" />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <img src={LogoNASA} width="150" />
+          </Grid><Grid item xs={6} md={4} lg={2}>
+            <img src={LogoNASA} width="150" />
+          </Grid><Grid item xs={6} md={4} lg={2}>
+            <img src={LogoNASA} width="150" />
+          </Grid><Grid item xs={6} md={4} lg={2}>
+            <img src={LogoNASA} width="150" />
+          </Grid><Grid item xs={6} md={4} lg={2}>
+            <img src={LogoNASA} width="150" />
+          </Grid>
+        </Grid>
+      </Container>
+      <HomepageCard>
+        <HomepageCardContent background="blue">
+            ## Who we are
+            
+            The Riverscapes Consortium is a collective of scientists, riverscape restoration practitioners and supporters, tackling urgent riverscape challenges intensified by climate change.
+            
+            Our strength is in our diverse perspectives coming together to improve riverscape health around the planet. Our work advances the science, builds community, develops tools, and distributes data to increase capacity, knowledge, and inspire action.
+            
+            <Button 
+            to="/about">Learn more about us</Button>
+        </HomepageCardContent>
+        <HomepageCardHighlight type="image">
+          <img src={CardImage} width="100%" />
+        </HomepageCardHighlight>
+    </HomepageCard>
