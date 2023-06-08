@@ -1,8 +1,6 @@
 .pageLayout {
     container-type: inline-size;
     container-name: pageLayout;
-
-    padding-bottom: var(--space-4);
 }
 .header {}
 .contentRegion {

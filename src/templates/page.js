@@ -65,7 +65,7 @@ const BlogPostTemplate = ({
                   showHeading />
               </aside>:''}
           </div>
-          <Container maxWidth="xl">
+          <Container maxWidth="xl" sx={{mb: 4}}>
               <Grid container spacing={4} sx={{ my: 3 }}>
                 {cardsContent}
               </Grid>
