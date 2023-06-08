@@ -15,15 +15,15 @@ module.exports = {
     menuLinks: [
       {
         "title": "About us",
-        "url": "/",
+        "url": "/about-us",
         "items": [
           {
-            "title": "child",
-            "url": "/"
+            "title": "What is a riverscape",
+            "url": "/about-us/what-is-a-riverscape"
           },
           {
-            "title": "child 2",
-            "url": "/"
+            "title": "FAIR principles",
+            "url": "/about-us/fair-principles"
           }
         ]
       },
@@ -47,11 +47,11 @@ module.exports = {
       },
       {
         "title": "Workshops & events",
-        "url": "/"
+        "url": "/workshops-events"
       },
       {
         "title": "Get involved",
-        "url": "/"
+        "url": "/get-involved"
       },
       {
         "title": "Contact",
