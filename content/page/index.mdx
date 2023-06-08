@@ -19,6 +19,12 @@ import Layout from "../../src/components/layout"
 import HeroImage from '../../src/images/background-hero.jpg'
 import CardImage from '../../src/images/card-image.jpg'
 import LogoNASA from '../../src/images/logo-nasa.png'
+import LogoALOGO from '../../src/images/logo-alogo.png'
+import LogoLOGOBRAND from '../../src/images/logo-logobrand.png'
+import LogoUTAH from '../../src/images/logo-utah_state.png'
+import LogoNRDC from '../../src/images/logo-nrdc.png'
+import LogoUSGS from '../../src/images/logo-usgs.png'
+
 
 <Hero
     image={HeroImage}
@@ -172,7 +178,7 @@ The Riverscapes Consortium is dedicated to changing the trajectory of this story
 
           We want to support anyone taking action to improve riverscapes health and work collectively to advance the science and build a robust community equipped to meet the urgent threats to riverscapes around the world. The opportunity to effect durable change is now.
           
-          <Button to="/about">Get involved</Button>
+          <Button to="/get-involved/">Get involved</Button>
         </HomepageCardContent>
         <HomepageCardHighlight type="text">
           <HomepageCardStat
@@ -184,18 +190,22 @@ The Riverscapes Consortium is dedicated to changing the trajectory of this story
         <Divider>Our supporters</Divider>
         <Grid container spacing={4} justifyContent="center" alignItems="center" sx={{mt: 3}}>
           <Grid item xs={6} md={4} lg={2}>
-            <img src={LogoNASA} width="150" />
+            <img src={LogoUTAH} width="200"/>
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <img src={LogoNASA} width="150" />
-          </Grid><Grid item xs={6} md={4} lg={2}>
-            <img src={LogoNASA} width="150" />
-          </Grid><Grid item xs={6} md={4} lg={2}>
-            <img src={LogoNASA} width="150" />
-          </Grid><Grid item xs={6} md={4} lg={2}>
-            <img src={LogoNASA} width="150" />
-          </Grid><Grid item xs={6} md={4} lg={2}>
-            <img src={LogoNASA} width="150" />
+            <img src={LogoNASA} width="130" />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <img src={LogoNRDC} width="100" />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <img src={LogoUSGS} width="150" />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <img src={LogoLOGOBRAND} width="150" />
+          </Grid>
+          <Grid item xs={6} md={4} lg={2}>
+            <img src={LogoALOGO} width="150" />
           </Grid>
         </Grid>
       </Container>
@@ -208,7 +218,7 @@ The Riverscapes Consortium is dedicated to changing the trajectory of this story
             Our strength is in our diverse perspectives coming together to improve riverscape health around the planet. Our work advances the science, builds community, develops tools, and distributes data to increase capacity, knowledge, and inspire action.
             
             <Button 
-            to="/about">Learn more about us</Button>
+            to="/about-us/">Learn more about us</Button>
         </HomepageCardContent>
         <HomepageCardHighlight type="image">
           <img src={CardImage} width="100%" />
