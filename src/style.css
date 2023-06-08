@@ -52,8 +52,14 @@
     --space-12: calc(var(--space-1) * 12);
     --space-13: calc(var(--space-1) * 13);
     --space-14: calc(var(--space-1) * 14);
-    --space-xlarge: 9rem; /* 144px */
-    --space-xxlarge: 11.25rem; /* 180px */
+    --space-15: calc(var(--space-1) * 15);
+    --space-16: calc(var(--space-1) * 16);
+    --space-17: calc(var(--space-1) * 17);
+    --space-18: calc(var(--space-1) * 18);
+    --space-19: calc(var(--space-1) * 19);
+    --space-20: calc(var(--space-1) * 20);
+    --space-21: calc(var(--space-1) * 21);
+    --space-22: calc(var(--space-1) * 22);
     --space-gutter: var(--space-4);
     --space-edge: var(--space-2);
     --space-component-large: var(--space-8);

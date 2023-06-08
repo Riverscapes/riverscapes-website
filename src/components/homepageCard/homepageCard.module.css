@@ -54,6 +54,9 @@
 .imageHighlight {
     background-size: cover;
 }
+.imageHighlight img {
+    display: block;
+}
 .flexCenter .stat {
     text-align: center;
 }
@@ -98,9 +101,9 @@
         margin-right: var(--space-auto);
     }
     .contentRegion {
-        grid-column: 1/span 8;
+        grid-column: 1/span 7;
         grid-row: 1;
-        padding: var(--space-12) var(--space-xxlarge) var(--space-12) clamp(1rem, 15vw - 6.5rem, 12.5rem);
+        padding: var(--space-12) var(--space-22) var(--space-12) clamp(1rem, 25vw - 20.5rem, 12.5rem);
     }
 
     .whiteContent {
@@ -109,15 +112,15 @@
     }
 
     .homepageRegion {
-        grid-column: 8/span 4;
+        grid-column: 7/span 6;
         grid-row: 1;
     }
 
     .textHighlight {
-        padding: var(--space-8);
+        padding: var(--space-12) var(--space-8);
     }
 
     .stat:nth-child(n+3) {
-        margin-top: var(--space-xlarge);
+        margin-top: var(--space-18);
     }
 }
