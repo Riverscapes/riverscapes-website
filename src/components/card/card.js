@@ -37,7 +37,7 @@ export default ImgCard
 
 ImgCard.propTypes = {
     to: propTypes.string.isRequired,
-    img: propTypes.string.isRequired,
+    img: propTypes.object.isRequired,
     imgAlt: propTypes.string.isRequired,
     heading: propTypes.string.isRequired,
     headingVariant: propTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5']),
