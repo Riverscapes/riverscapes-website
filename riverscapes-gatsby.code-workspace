@@ -1,0 +1,49 @@
+{
+  "folders": [
+    {
+      "name": "🏠 Home",
+      "path": "."
+    }    
+  ],
+  "settings": {
+    "window.title": "REGOLITH-${separator}${activeEditorShort}${separator}${rootName}",
+    "jest.disabledWorkspaceFolders": [
+      "📖 Docs",
+      "📱 App",
+      "🧬 Schema",
+      "🏠 Home",
+    ],
+    "workbench.colorCustomizations": {
+			"titleBar.activeBackground": "#001768",
+      "sideBar.background": "#242132",
+			"editor.background": "#1e1c2c"
+		},    
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "files.watcherExclude": {
+      "**/node_modules/**": true
+    },
+    "search.exclude": {
+      "**/node_modules/**": true,
+      "**/dist/**": true,
+      "**/*.d.ts": true,
+      "react/": true
+    },
+    "files.exclude": {
+      "**/dist/**": true,
+      // "**/node_modules/**": true
+    }
+  },
+  "launch": {
+    "configurations": [
+      {
+        "type": "chrome",
+        "name": "https://localhost:6006",
+        "request": "launch",
+        "url": "https://localhost:6006"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+on:
+  push:
+    branches:
+      - dev
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Create .env file
+        uses: SpicyPizza/create-envfile@v1
+        with:
+          envkey_GATSBY_VERSION: $npm_package_version
+      - uses: enriikke/gatsby-gh-pages-action@v2
+        with:
+          access-token: x-access-token:${{ secrets.GITHUB_TOKEN }}
+          deploy-branch: gh-pages
+          gatsby-args: --prefix-paths
+          skip-publish: true

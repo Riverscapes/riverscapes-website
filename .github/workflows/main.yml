@@ -1,0 +1,25 @@
+name: Gatsby Publish
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run env file
+        run: |
+          pwd
+          chmod +x ./scripts/ghPagesBuild.sh
+          ./scripts/ghPagesBuild.sh
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - uses: enriikke/gatsby-gh-pages-action@v2
+        with:
+          access-token: x-access-token:${{ secrets.GITHUB_TOKEN }}
+          deploy-branch: gh-pages
+          gatsby-args: --prefix-paths
