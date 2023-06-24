@@ -89,7 +89,7 @@ export const Copyright = () => {
   return (
     <div className={footerStyles.copyright}>
         <div>
-          <a href={`https://twitter.com/`}>
+          <a href={`https://creativecommons.org/licenses/by/4.0/`}>
             <StaticImage
               layout={"constrained"}
               formats={["auto", "webp", "avif"]}
@@ -102,7 +102,7 @@ export const Copyright = () => {
           </a>
         </div>
         <div>
-          <a href={`https://twitter.com/`}>
+          <a href={`https://creativecommons.org/licenses/by/4.0/`}>
             <StaticImage
               layout={"constrained"}
               formats={["auto", "webp", "avif"]}
