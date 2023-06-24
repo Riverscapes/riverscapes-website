@@ -83,3 +83,7 @@ Production build: `gatsby build`
 ## Menu / Navigation
 
 Header menu and footer link menu are managed through `menuLinks` in [`gatsby-config.js`](gatsby-config.js)
+
+## Footer
+
+Footer content is updated through [`footer.json`](content/utilities/footer.jsonfooter.json) in `content/utilities`
