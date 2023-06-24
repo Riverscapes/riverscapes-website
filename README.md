@@ -86,4 +86,4 @@ Header menu and footer link menu are managed through `menuLinks` in [`gatsby-con
 
 ## Footer
 
-Footer content is updated through [`footer.json`](content/utilities/footer.jsonfooter.json) in `content/utilities`
+Footer content is updated through [`footer.json`](content/utilities/footer.json) in `content/utilities`
