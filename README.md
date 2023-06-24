@@ -79,3 +79,7 @@ Production build: `gatsby build`
 - Use for defining region
 - maxWidth="xl" for max content region width
 ### [Grid](https://mui.com/material-ui/react-grid/)
+
+## Menu / Navigation
+
+Header menu and footer link menu are managed through `menuLinks` in [`gatsby-config.js`](gatsby-config.js)
