@@ -114,7 +114,7 @@ export const Copyright = () => {
             />
           </a>
         </div>
-        <p>Copyright Riverscapes Consortium</p>
+        <p>Riverscapes Consortium</p>
       </div>
   )
 }
