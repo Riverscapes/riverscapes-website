@@ -32,12 +32,20 @@ module.exports = {
         "url": "/our-work/",
         "items": [
           {
-            "title": "Data Exchange",
+            "title": "Riverscapes Consortium Data Exchange",
             "url": "/our-work/data-exchange"
           },
           {
-            "title": "Apps",
+            "title": "Riverscapes Consortium Applications",
             "url": "/our-work/apps"
+          },
+          {
+            "title": "Riverscapes Consortium Models",
+            "url": "/our-work/models"
+          },
+          {
+            "title": "Data Standards and Compliance",
+            "url": "/our-work/standards"
           }
         ]
       },
