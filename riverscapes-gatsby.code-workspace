@@ -6,7 +6,7 @@
     }    
   ],
   "settings": {
-    "window.title": "REGOLITH-${separator}${activeEditorShort}${separator}${rootName}",
+    "window.title": "riverscapes.net GATSBY -${separator}${activeEditorShort}${separator}${rootName}",
     "jest.disabledWorkspaceFolders": [
       "📖 Docs",
       "📱 App",
