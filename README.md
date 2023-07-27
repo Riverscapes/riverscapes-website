@@ -87,3 +87,11 @@ Header menu and footer link menu are managed through `menuLinks` in [`gatsby-con
 ## Footer
 
 Footer content is updated through [`footer.json`](content/utilities/footer.json) in `content/utilities`
+
+# More Resources
+
+- [Gatsby Project Structure](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/)
+- [How to populate text using MUI typography](https://mui.com/material-ui/api/typography/)
+- how to add more cards to a page - card and MUI grid, container for max region width
+- how to update the main nav - identified in menu readme
+- how to update the footer info - menu above and footer readme
