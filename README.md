@@ -1,9 +1,17 @@
 # Riverscape Website
 
 ## Content
+
 ### MDX
+
 - /content/page/ - All pages
 - /content/utilities/ - Footer content
+
+All MDX pages must have a Heading2 text at the top. This is used in code that loops (maps) over the content pages.
+
+To add cards to the bottom of an MDX page, simply add subfolders into the folder containing the parent MDX file. Copy the format from the existing subpages.
+
+Markdown images in MDX files should be placed directly in the same folder as the MDX page that uses them.
 
 ### Image
 - /src/images
@@ -87,6 +95,8 @@ Header menu and footer link menu are managed through `menuLinks` in [`gatsby-con
 ## Footer
 
 Footer content is updated through [`footer.json`](content/utilities/footer.json) in `content/utilities`
+
+Note the footer gets the top level menu links from [`gatsby-config.js`](gatsby-config.js). It doesn't pull the second or third menu levels.
 
 # More Resources
 
