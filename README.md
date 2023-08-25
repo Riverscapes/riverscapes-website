@@ -104,4 +104,5 @@ Note the footer gets the top level menu links from [`gatsby-config.js`](gatsby-c
 - [How to populate text using MUI typography](https://mui.com/material-ui/api/typography/)
 - how to add more cards to a page - card and MUI grid, container for max region width
 - how to update the main nav - identified in menu readme
-- how to update the footer info - menu above and footer readme
+- how to update the footer info - menu above and footer readme.
+- Make sure you have the MDX extension for Visual Studio Code installed for linting.
