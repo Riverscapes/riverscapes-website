@@ -3,7 +3,7 @@ title: Standards of Practice
 date: "2023-05-20T22:12:03.284Z"
 description: "Standards of Practice Page"
 blurb: "Professional standards of practice that practitioners adhere to and regulatory agencies look for"
-image: ../../../card-image.jpg
+image: ../../../../src/images/card-image.jpg
 imageAlt: "Image Alt Sample"
 banner: true
 ---
