@@ -2,7 +2,7 @@
 title: Data Standards
 date: "2023-05-20T22:12:03.284Z"
 description: "Data Standards"
-blurb: "Sample blurb2"
+blurb: "For the RC, Data Standards are achieved with wrapping up data in Riverscapes Projects"
 image: ../../../../src/images/card-image.jpg
 imageAlt: "Image Alt Sample"
 banner: true
@@ -37,7 +37,7 @@ Software that displays datasets to users, such as the Riverscapes Viewer, use an
 
 Essentially, the Business Logic XML takes the technical specification of the data in the project file and turns it into a more useful format for more effectively finding and visualizing the data.
 
-There is one Business Logic XSD ruleset  that specifies which tags can be used and how to combine them to define the hierarchical tree structure for each project type. Each model has its own business logic XML file.
+There is one [Business Logic XSD ruleset](https://github.com/Riverscapes/RiverscapesXML/blob/master/RaveBusinessLogic/XSD/project_explorer.xsd)  that specifies which tags can be used and how to combine them to define the hierarchical tree structure for each project type. Each model has its own business logic XML file.
 
 Users can also customize the Business Logic for a particular model should they wish to visualize a project in different ways.
 
@@ -61,13 +61,13 @@ Riverscapes research, like many disciplines, is held back by too many technology
 
 # How to Apply Riverscapes Standards to Your Data
 
-Follow these steps, all of which are underpinned by the FAIR principles,  to apply the riverscapes standards to your data. 
+Follow these steps, all of which are underpinned by the [FAIR principles](https://www.go-fair.org/fair-principles/),  to apply the riverscapes standards to your data. 
 
-1. Ensure that all the data are in open, non-proprietary formats. This is especially important for geospatial data. We recommend GeoTiffs for rasters and GeoPackages for vector data. ShapeFiles, although a published format are discouraged for numerous reasons.
+1. Ensure that all the data are in open, non-proprietary formats. This is especially important for geospatial data. We recommend GeoTiffs for rasters and [GeoPackages](https://www.geopackage.org/) for vector data. ShapeFiles, although a published format are discouraged for [numerous reasons](http://switchfromshapefile.org/).
 
 2. Organize the data into a logical file and folder structure. Use common sense and think about how users will consume the data. There are no specific rules about the folder structure.
 
-3. Provide an accompanying XML file called project.rs.xml at the root of the folder structure. This XML file has a strict, but helpful structure that helps catalog the individual data files. This XML file must refer to the latest version of the Riverscapes Data Standards published online. The best way to ensure compliance is to refer to the XSD file and then validate your XML file using a tool such as Visual Studio Code. Data with a project.rs.xml file that does not validate cannot be incorporated into the Riverscapes Data Exchange.
+3. Provide an accompanying XML file called project.rs.xml at the root of the folder structure. This XML file has a strict, but helpful structure that helps catalog the individual data files. This XML file must refer to the latest version of the [Riverscapes Data Standards published online](https://github.com/Riverscapes/RiverscapesXML/blob/master/Projects/XSD/V2/RiverscapesProject.xsd). The best way to ensure compliance is to refer to the XSD file and then validate your XML file using a tool such as Visual Studio Code. Data with a project.rs.xml file that does not validate cannot be incorporated into the Riverscapes Data Exchange.
 
 4. Ensure that the project.rs.xml file includes appropriate metadata to help others understand and leverage your data. No one likes metadata, but this is your chance to help future you remember all the nitty gritty details about where the data originated, how it was processed and any limitations on its use.
 
