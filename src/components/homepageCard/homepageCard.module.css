@@ -16,7 +16,7 @@
 }
 
 .blueContent {
-    background: url(./background-homepagecard-content.jpg);
+    background: url(./img/background-homepagecard-content.jpg);
     background-size: cover;
 }
 .blueContent * {

@@ -45,5 +45,10 @@
         "url": "https://localhost:6006"
       }
     ]
+  },
+  "extensions": {
+    "recommendations": [
+      "unifiedjs.vscode-mdx"
+    ]
   }
 }

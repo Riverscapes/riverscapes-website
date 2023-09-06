@@ -1,5 +1,5 @@
 {
-  "name": "riverscape-website",
+  "name": "@riverscapes/website",
   "private": true,
   "description": "Riverscapes website powered by Gatsby and Markdown",
   "version": "0.1.0",
@@ -29,10 +29,32 @@
     "prismjs": "^1.29.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "typescript": "^4.7.2"
   },
   "devDependencies": {
-    "prettier": "^2.8.8"
+    "@emotion/eslint-plugin": "^11.10.0",
+    "@types/jest": "^29.2.5",
+    "@types/lodash": "^4.14.178",
+    "@types/node": "^14.18.12",
+    "@types/numeral": "^2.0.2",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "5.56.0",
+    "@typescript-eslint/parser": "5.56.0",
+    "dotenv": "^8.2.0",
+    "eslint": "7.11.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-standard": ">=4.0.0",
+    "prettier": "^2.8.8",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.8.0"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -49,6 +71,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "typecheck": "tsc --noEmit"
   }
 }
