@@ -48,7 +48,7 @@ const createIndividualPage = async ({ pages, gatsbyUtilities }) =>
         path: replacePath(page.fields.slug),
 
         // use the blog post template as the page component
-        component: `${path.resolve(`./src/templates/page.js`)}?__contentFilePath=${page.internal.contentFilePath}`,
+        component: `${path.resolve(`./src/templates/page.tsx`)}?__contentFilePath=${page.internal.contentFilePath}`,
 
         // `context` is available in the template as a prop and
         // as a variable in GraphQL.

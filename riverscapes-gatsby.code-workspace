@@ -13,6 +13,7 @@
       "🧬 Schema",
       "🏠 Home",
     ],
+    "css.lint.validProperties": ["composes"],
     "workbench.colorCustomizations": {
 			"titleBar.activeBackground": "#001768",
       "sideBar.background": "#242132",
@@ -28,8 +29,6 @@
     "search.exclude": {
       "**/node_modules/**": true,
       "**/dist/**": true,
-      "**/*.d.ts": true,
-      "react/": true
     },
     "files.exclude": {
       "**/dist/**": true,
@@ -40,9 +39,9 @@
     "configurations": [
       {
         "type": "chrome",
-        "name": "https://localhost:6006",
+        "name": "Debug Using Chrome",
         "request": "launch",
-        "url": "https://localhost:6006"
+        "url": "https://localhost:8000"
       }
     ]
   },

@@ -74,13 +74,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-mdx-source-name`,
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/content/blog`,
-    //     name: `blog`,
-    //   },
-    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -88,7 +81,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {

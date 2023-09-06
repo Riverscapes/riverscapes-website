@@ -12,7 +12,7 @@ interface SideNavProps {
   headingType?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5'
   content: MobileMenu
   showHeading: boolean
-  theme: 'white' | 'none'
+  theme?: 'white' | 'none'
 }
 
 const SideNav: React.FC<SideNavProps> = ({

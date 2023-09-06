@@ -6,7 +6,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image'
 import { Card, CardActionArea, CardContent, Typography } from '@mui/material'
-// import * as cardStyles from './card.module.css'
+import './card.module.css'
 
 interface ImgCardProps {
   to: string
