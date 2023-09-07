@@ -141,11 +141,20 @@ export const theme = createTheme({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
-        html: {},
-        body: {
-          p: 0,
-          m: 0,
-        },
+        // html: {},
+        // body: {
+        //   p: 0,
+        //   m: 0,
+        // },
+        // a: {
+        //   textDecoration: 'none',
+        //   '&:hover': {
+        //     textDecoration: 'underline',
+        //   },
+        //   '&:visited': {
+        //     textDecoration: 'none',
+        //   },
+        // },
       },
     },
     // Name of the component

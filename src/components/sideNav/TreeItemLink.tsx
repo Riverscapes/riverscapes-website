@@ -21,10 +21,13 @@ const TreeItemLink: React.FC<TreeItemLinkProps> = ({ to, label, children, ...res
           py: 1,
         },
         '& .MuiTreeItem-label': {
-          fontSize: '1rem',
+          fontSize: '1.2rem',
         },
         '& .MuiTreeItem-group': {
           ml: 0,
+        },
+        '& a': {
+          textDecoration: 'none',
         },
         '& .MuiTreeItem-iconContainer': {
           color: '#0661C1',

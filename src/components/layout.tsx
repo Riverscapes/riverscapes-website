@@ -3,7 +3,7 @@ import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles'
 import { theme } from '../muiTheme'
 import Header from './Header'
 import Footer from './Footer'
-import { Box } from '@mui/material'
+import { Box, CssBaseline } from '@mui/material'
 
 interface LayoutProps {
   location: Location
@@ -16,15 +16,18 @@ const Layout: React.FC<LayoutProps> = ({ location, title, children }) => {
   const isRootPath = location.pathname === rootPath
 
   return (
-    <Box className="global-wrapper" data-is-root-path={isRootPath}>
-      <StyledEngineProvider injectFirst>
-        <ThemeProvider theme={theme}>
-          <Header />
-          <Box component="main">{children}</Box>
-          <Footer />
-        </ThemeProvider>
-      </StyledEngineProvider>
-    </Box>
+    <div>
+      <CssBaseline />
+      <Box className="global-wrapper" data-is-root-path={isRootPath}>
+        <StyledEngineProvider injectFirst>
+          <ThemeProvider theme={theme}>
+            <Header />
+            <Box component="main">{children}</Box>
+            <Footer />
+          </ThemeProvider>
+        </StyledEngineProvider>
+      </Box>
+    </div>
   )
 }
 

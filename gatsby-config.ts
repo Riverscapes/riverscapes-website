@@ -117,7 +117,22 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      defaults: {
+        formats: [`auto`, `webp`],
+        placeholder: `dominantColor`,
+        quality: 50,
+        breakpoints: [750, 1080, 1366, 1920],
+        backgroundColor: `transparent`,
+        tracedSVGOptions: {},
+        blurredOptions: {},
+        jpgOptions: {},
+        pngOptions: {},
+        webpOptions: {},
+        avifOptions: {},
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -130,19 +145,6 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/favicon/data-exchange-icon-64x64.png`, // This path is relative to the root of the site.
-        defaults: {
-          formats: [`auto`, `webp`],
-          placeholder: `dominantColor`,
-          quality: 50,
-          breakpoints: [750, 1080, 1366, 1920],
-          backgroundColor: `transparent`,
-          tracedSVGOptions: {},
-          blurredOptions: {},
-          jpgOptions: {},
-          pngOptions: {},
-          webpOptions: {},
-          avifOptions: {},
-        },
       },
     },
   ],
