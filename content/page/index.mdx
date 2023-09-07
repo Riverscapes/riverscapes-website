@@ -7,14 +7,8 @@ isHome: true
 ---
 
 import { Link, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import { Container, Divider, Grid, Card, CardActionArea, CardMedia, CardContent, Typography } from '@mui/material'
-
-import Button from "../../src/components/button"
-import Hero from "../../src/components/hero"
-import HomepageCard, { HomepageCardContent, HomepageCardHighlight, HomepageCardStat} from "../../src/components/homepageCard"
-import Layout from "../../src/components/layout"
 
 import HeroImage from '../../src/images/background-hero.jpg'
 import CardImage from '../../src/images/card-image.jpg'
@@ -45,14 +39,7 @@ The Riverscapes Consortium is dedicated to changing the trajectory of this story
         <Grid container space={2}>
             <Grid item md={5} lg={4} />
             <Grid item xs={12}  md={6}>
-                <StaticImage
-                layout="fullWidth"
-                formats={["auto", "webp", "avif"]}
-                src='../images/what-is-riverscape.jpg'
-                quality={95}
-                alt="illustration"
-                placeholder="none"
-                />
+
             </Grid>
         </Grid>
         <Grid container space={2}>
@@ -78,24 +65,12 @@ The Riverscapes Consortium is dedicated to changing the trajectory of this story
 
             <Button to="/our-work/">Explore our work</Button>
         </HomepageCardContent>
-        <HomepageCardHighlight type="text" align="center">
-          <HomepageCardStat
-            value="42+"
-            label="Label here"
-          />
-          <HomepageCardStat
-            value="133%"
-            label="Label here"
-          />
-          <HomepageCardStat
-            value="10,000"
-            label="Some more label here"
-          />
-          <HomepageCardStat
-            value="27"
-            label="Other stat label here"
-          />
-        </HomepageCardHighlight>
+        <HomepageCardHighlight type="text" align="center" columns={2} stats={[
+          {value: "42+", label: "Label here"},
+          {value: "133%", label: "Label here"},
+          {value: "10,000", label: "Label here"},
+          {value: "27", label: "Label here"},
+        ]} />
       </HomepageCard>
       <Container maxWidth="xl">
         ### Stories & updates
@@ -180,11 +155,10 @@ The Riverscapes Consortium is dedicated to changing the trajectory of this story
           
           <Button to="/get-involved/">Get involved</Button>
         </HomepageCardContent>
-        <HomepageCardHighlight type="text">
-          <HomepageCardStat
-            value='"Instead of spending $1 million per stream mile, maybe you spend $10,000."'
-            label="Joe Wheaton, Utah State University" />
-        </HomepageCardHighlight>
+        <HomepageCardHighlight stats={[{
+          value: 'Instead of spending $1 million per stream mile, maybe you spend $10,000.',
+          label: 'Joe Wheaton, Utah State University'}
+        ]}/>
       </HomepageCard>
       <Container maxWidth="xl">
         <Divider>Our supporters</Divider>

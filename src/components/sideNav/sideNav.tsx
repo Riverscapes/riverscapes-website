@@ -3,9 +3,9 @@ import Typography from '@mui/material/Typography'
 import TreeView from '@mui/lab/TreeView'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
-import TreeItemLink from '../treeItemLink'
-import * as SideNavStyles from './sideNav.module.css'
+import TreeItemLink from './TreeItemLink'
 import { MobileMenu, MobileMenuItem } from '../../types'
+import { Box } from '@mui/material'
 
 interface SideNavProps {
   heading?: string
@@ -23,7 +23,13 @@ const SideNav: React.FC<SideNavProps> = ({
   theme = 'none',
 }) => {
   const navHeading = showHeading ? (
-    <Typography className={SideNavStyles.sideNavHeading} component={headingType} variant="h2">
+    <Typography
+      sx={{
+        mb: 3,
+      }}
+      component={headingType}
+      variant="h2"
+    >
       {heading}
     </Typography>
   ) : (
@@ -47,15 +53,18 @@ const SideNav: React.FC<SideNavProps> = ({
 
   const contentItem = (node: MobileMenuItem[]) => {
     const level = 0
-    return node.map((item, key) => {
+    return (node || []).map((item, key) => {
       return renderTree(item, `${key}`, level)
     })
   }
 
-  const themeStyle = theme === 'white' ? SideNavStyles.sideNavWhite : ''
-
   return (
-    <div className={`${SideNavStyles.sideNav} ${themeStyle}`}>
+    <Box
+      sx={{
+        mt: 4,
+        backgroundColor: theme === 'white' ? 'white' : undefined,
+      }}
+    >
       {navHeading}
       <TreeView
         aria-label="Side Navigation"
@@ -64,7 +73,7 @@ const SideNav: React.FC<SideNavProps> = ({
       >
         {contentItem(content.items)}
       </TreeView>
-    </div>
+    </Box>
   )
 }
 

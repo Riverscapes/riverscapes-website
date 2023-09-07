@@ -1,8 +1,9 @@
 import * as React from 'react'
 import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles'
 import { theme } from '../muiTheme'
-import Header from './header/header'
-import Footer from './footer/footer'
+import Header from './Header'
+import Footer from './Footer'
+import { Box } from '@mui/material'
 
 interface LayoutProps {
   location: Location
@@ -15,15 +16,15 @@ const Layout: React.FC<LayoutProps> = ({ location, title, children }) => {
   const isRootPath = location.pathname === rootPath
 
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
+    <Box className="global-wrapper" data-is-root-path={isRootPath}>
       <StyledEngineProvider injectFirst>
         <ThemeProvider theme={theme}>
           <Header />
-          <main>{children}</main>
+          <Box component="main">{children}</Box>
           <Footer />
         </ThemeProvider>
       </StyledEngineProvider>
-    </div>
+    </Box>
   )
 }
 

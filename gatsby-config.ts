@@ -78,6 +78,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
+        ignore: [`**/\.*`],
         path: `${__dirname}/src/images`,
       },
     },
@@ -85,6 +86,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `page`,
+        ignore: [`**/\.*`],
         path: `${__dirname}/content/page`,
       },
     },
@@ -128,6 +130,19 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/favicon/data-exchange-icon-64x64.png`, // This path is relative to the root of the site.
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `dominantColor`,
+          quality: 50,
+          breakpoints: [750, 1080, 1366, 1920],
+          backgroundColor: `transparent`,
+          tracedSVGOptions: {},
+          blurredOptions: {},
+          jpgOptions: {},
+          pngOptions: {},
+          webpOptions: {},
+          avifOptions: {},
+        },
       },
     },
   ],
