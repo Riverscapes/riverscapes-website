@@ -12,7 +12,7 @@ import footerContent from '../../content/utilities/footer.json'
 
 /* Footer style */
 import { Copyright } from './Copyright'
-import { Box, Container, Divider, Stack, SxProps, Theme, Typography, useTheme } from '@mui/material'
+import { Box, Container, Divider, IconButton, Stack, SxProps, Theme, Typography, useTheme } from '@mui/material'
 
 const stylesThunk = (theme: Theme): Record<string, SxProps<Theme>> => ({
   wrapper: {
@@ -36,7 +36,7 @@ const stylesThunk = (theme: Theme): Record<string, SxProps<Theme>> => ({
       '& > *': {
         flex: 1,
       },
-      '& :first-child': {
+      '& :nth-of-type(1)': {
         flex: '0 0 100%',
       },
     },
@@ -104,22 +104,22 @@ const Footer: React.FC = () => {
             </GatsbyLink>
           </Box>
           <Box>
-            <Typography variant="h4" paragraph>
+            <Typography variant="h3" paragraph sx={{ color: 'inherit' }}>
               {footerContent.contact.heading}
             </Typography>
-            <Typography variant="caption" dangerouslySetInnerHTML={{ __html: footerContent.contact.content }} />
+            <Typography variant="body1" dangerouslySetInnerHTML={{ __html: footerContent.contact.content }} />
           </Box>
           <Box>
-            <Typography variant="h4" paragraph>
+            <Typography variant="h3" paragraph sx={{ color: 'inherit' }}>
               {footerContent.link.heading}
             </Typography>
             <Menu invert />
           </Box>
           <Box>
-            <Typography variant="h4" paragraph>
+            <Typography variant="h3" paragraph sx={{ color: 'inherit' }}>
               {footerContent.follow.heading}
             </Typography>
-            <GatsbyLink to={`https://twitter.com/${social?.twitter || ``}`} target="_blank">
+            <IconButton onClick={() => window.open(`https://twitter.com/${social?.twitter}` || '', '_blank')}>
               <StaticImage
                 layout={'constrained'}
                 formats={['auto', 'webp', 'avif']}
@@ -129,7 +129,7 @@ const Footer: React.FC = () => {
                 alt="Twitter logo"
                 placeholder="none"
               />
-            </GatsbyLink>
+            </IconButton>
           </Box>
         </Stack>
       </Container>

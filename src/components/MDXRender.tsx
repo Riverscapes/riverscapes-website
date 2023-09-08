@@ -1,10 +1,12 @@
 import * as React from 'react'
 import { MDXProvider } from '@mdx-js/react'
-import { Box, Divider, Typography, useTheme } from '@mui/material'
-
+import { Box, Divider, Stack, Grid, Typography, useTheme, Alert } from '@mui/material'
+import 'prismjs/themes/prism-dark.css'
 // import Bio from "../components/bio"
-import Button from '../components/LinkButton'
+import Button from './RSLinkButton'
+import { RSLink } from './RSLink'
 import Hero from '../components/Hero'
+import { YoutubeEmbed } from '../components/YoutubeEmbed'
 import HomepageCard, { HomepageCardContent, HomepageCardHighlight, HomepageCardStat } from '../components/homepageCards'
 
 // import PageContent from "../../content/utilities/page.json"
@@ -19,6 +21,12 @@ const MDXRender: React.FC<React.PropsWithChildren> = ({ children }) => {
     HomepageCardStat,
     Button,
     Hero,
+    Link: RSLink,
+    Youtube: YoutubeEmbed,
+    Box,
+    Stack,
+    Grid,
+    Alert,
   }
 
   const hStyles = {
@@ -65,44 +73,35 @@ const MDXRender: React.FC<React.PropsWithChildren> = ({ children }) => {
             {children}
           </Typography>
         ),
-        a: ({ children, className, href, ...props }) => {
-          const target = href.startsWith('http') ? '_blank' : undefined
-          if (className && className.indexOf('header-link-icon') >= 0)
-            return (
-              <Box
-                className={className}
-                component="a"
-                href={href}
-                {...(props as any)}
-                sx={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  transform: 'translateX(-100%)',
-                  pr: '4px',
-                  display: 'none',
-                }}
-              >
-                {children}
-              </Box>
-            )
+        img: ({ src, alt, ...rest }) => {
           return (
-            <Typography
-              component="a"
-              target={target}
-              href={href}
-              {...(props as any)}
+            <Box
               sx={{
-                textDecoration: 'none',
-                color: theme.palette.text.primary,
-                '&:hover': {
-                  textDecoration: 'underline',
-                },
+                maxWidth: '100%',
+                height: 'auto',
+                alignItems: 'center',
+                textAlign: 'center',
               }}
             >
-              {children}
-            </Typography>
+              <img
+                src={src}
+                style={{
+                  maxWidth: '100%',
+                  height: 'auto',
+                }}
+                alt={alt}
+                {...rest}
+              />
+            </Box>
           )
+        },
+        a: (props) => {
+          const { className, href } = props
+
+          // For internal targets the MDX plugin renders a little SVG button. we need to leave that alone
+          if (className && className.indexOf('header-link-icon') >= 0) return <a {...props} />
+
+          return <RSLink to={href} {...(props as any)} />
         },
         p: ({ children }) => (
           <Typography
@@ -133,6 +132,10 @@ const MDXRender: React.FC<React.PropsWithChildren> = ({ children }) => {
             {children}
           </Typography>
         ),
+        // iframe: (props) => {
+        //   // iframes that get pasted in have allkinds of problems
+        //   const { allowfullscreen, frameborder, ...rest } = props
+        // },
         blockquote: ({ children }) => (
           <Typography
             component={'blockquote'}

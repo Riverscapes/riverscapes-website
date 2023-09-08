@@ -1,18 +1,14 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import { MDXProvider } from '@mdx-js/react'
 import { Box, Container, Grid, Typography, useTheme } from '@mui/material'
 
 // import Bio from "../components/bio"
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 import Banner from '../components/Banner'
-import SideNav from '../components/sideNav'
 import ImgCard from '../components/ImgCard'
-import Button from '../components/LinkButton'
-import Hero from '../components/Hero'
-import HomepageCard, { HomepageCardContent, HomepageCardHighlight, HomepageCardStat } from '../components/homepageCards'
 import MDXRender from '../components/MDXRender'
+import SideNav from '../components/menus/SideNav'
 
 // import PageContent from "../../content/utilities/page.json"
 

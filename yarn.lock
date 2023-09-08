@@ -3654,12 +3654,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mdast@npm:^3.0.0, @types/mdast@npm:^3.0.3":
+"@types/mdast@npm:^3.0.0":
   version: 3.0.11
   resolution: "@types/mdast@npm:3.0.11"
   dependencies:
     "@types/unist": "*"
   checksum: 3b04cf465535553b47a1811c247668bd6cfeb54d99a2c9dbb82ccd0f5145d271d10c3169f929701d8cd55fd569f0d2e459a50845813ba3261f1fb0395a288cea
+  languageName: node
+  linkType: hard
+
+"@types/mdast@npm:^3.0.3":
+  version: 3.0.12
+  resolution: "@types/mdast@npm:3.0.12"
+  dependencies:
+    "@types/unist": ^2
+  checksum: 83adb8679b9d139f69f63554d120af921e9f1289e9903a2c99e0554a327c8524a6c0beccdc0721e4fdbccc606e81964fecb0d390d53df0f74360938e22f1a469
   languageName: node
   linkType: hard
 
@@ -3857,10 +3866,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/unist@npm:*, @types/unist@npm:^2.0.0, @types/unist@npm:^2.0.2, @types/unist@npm:^2.0.3":
+"@types/unist@npm:*, @types/unist@npm:^2.0.0":
   version: 2.0.6
   resolution: "@types/unist@npm:2.0.6"
   checksum: 25cb860ff10dde48b54622d58b23e66214211a61c84c0f15f88d38b61aa1b53d4d46e42b557924a93178c501c166aa37e28d7f6d994aba13d24685326272d5db
+  languageName: node
+  linkType: hard
+
+"@types/unist@npm:^2, @types/unist@npm:^2.0.2, @types/unist@npm:^2.0.3":
+  version: 2.0.8
+  resolution: "@types/unist@npm:2.0.8"
+  checksum: f4852d10a6752dc70df363917ef74453e5d2fd42824c0f6d09d19d530618e1402193977b1207366af4415aaec81d4e262c64d00345402020c4ca179216e553c7
   languageName: node
   linkType: hard
 
@@ -8563,6 +8579,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^4.12.0":
+  version: 4.12.0
+  resolution: "gatsby-core-utils@npm:4.12.0"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.15.0
+    file-type: ^16.5.4
+    fs-extra: ^11.1.1
+    got: ^11.8.6
+    hash-wasm: ^4.9.0
+    import-from: ^4.0.0
+    lmdb: 2.5.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: e21f44e7d8fab43abc14c6c207f18e499048f354b9833ba81be0d1d10187711b8e9f1a5e2d5a636d8d39121dc8f540b1b80dd9d9930502c3304444e6ae8185d6
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^3.10.0":
   version: 3.10.0
   resolution: "gatsby-graphiql-explorer@npm:3.10.0"
@@ -8856,8 +8896,8 @@ __metadata:
   linkType: hard
 
 "gatsby-remark-prismjs@npm:^7.10.0":
-  version: 7.10.0
-  resolution: "gatsby-remark-prismjs@npm:7.10.0"
+  version: 7.12.0
+  resolution: "gatsby-remark-prismjs@npm:7.12.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     parse-numeric-range: ^1.3.0
@@ -8865,7 +8905,7 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
     prismjs: ^1.15.0
-  checksum: 50a8319e8314549d66cc0449dd73b8aff32ae3516ca1a41f6f563c55e919eb4e9c8ebb2fed43c3b8ffcc6a8768eaded076b62a3b36183eba9dee3920cf7e00e9
+  checksum: fb6d6ebb309e5ab91ce2d9e4cd76e9dc7afe80c23354bc84160d773e35439b6ac6ef6be7a12d29c30155de3f4c700d9b201a20061a14c5614a72fd87106f3a2d
   languageName: node
   linkType: hard
 
@@ -8944,11 +8984,11 @@ __metadata:
   linkType: hard
 
 "gatsby-transformer-remark@npm:^6.10.0":
-  version: 6.10.0
-  resolution: "gatsby-transformer-remark@npm:6.10.0"
+  version: 6.12.0
+  resolution: "gatsby-transformer-remark@npm:6.12.0"
   dependencies:
     "@babel/runtime": ^7.20.13
-    gatsby-core-utils: ^4.10.0
+    gatsby-core-utils: ^4.12.0
     gray-matter: ^4.0.3
     hast-util-raw: ^6.1.0
     hast-util-to-html: ^7.1.3
@@ -8963,7 +9003,7 @@ __metadata:
     remark-retext: ^4.0.0
     remark-stringify: ^9.0.1
     retext-english: ^3.0.4
-    sanitize-html: ^2.10.0
+    sanitize-html: ^2.11.0
     underscore.string: ^3.3.6
     unified: ^9.2.2
     unist-util-remove-position: ^3.0.0
@@ -8971,7 +9011,7 @@ __metadata:
     unist-util-visit: ^2.0.3
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: acc2bb099b4b62716e0cadfb73d1cafc687e43b5c06fadc5b260fdd9e2859712a093da09852536d63904c9efa3b388ee7d3ee9960ae2cb19af2ff9609fef6106
+  checksum: 2301dbe629f5eb38b997ccd635335fe0719e079d1a6d2f73b9594f6ff73a11bf9a9fd8ba51542fee68a00a0bcdd3b516dee2e9264445386738db9cbc2421b6f0
   languageName: node
   linkType: hard
 
@@ -14024,7 +14064,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.2.15, postcss@npm:^8.2.9, postcss@npm:^8.3.11, postcss@npm:^8.4.23":
+"postcss@npm:^8.2.15, postcss@npm:^8.2.9, postcss@npm:^8.4.23":
   version: 8.4.24
   resolution: "postcss@npm:8.4.24"
   dependencies:
@@ -14032,6 +14072,17 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: 814e2126dacfea313588eda09cc99a9b4c26ec55c059188aa7a916d20d26d483483106dc5ff9e560731b59f45c5bb91b945dfadc670aed875cc90ddbbf4e787d
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.3.11":
+  version: 8.4.29
+  resolution: "postcss@npm:8.4.29"
+  dependencies:
+    nanoid: ^3.3.6
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: dd6daa25e781db9ae5b651d9b7bfde0ec6e60e86a37da69a18eb4773d5ddd51e28fc4ff054fbdc04636a31462e6bf09a1e50986f69ac52b10d46b7457cd36d12
   languageName: node
   linkType: hard
 
@@ -15096,9 +15147,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sanitize-html@npm:^2.10.0":
-  version: 2.10.0
-  resolution: "sanitize-html@npm:2.10.0"
+"sanitize-html@npm:^2.11.0":
+  version: 2.11.0
+  resolution: "sanitize-html@npm:2.11.0"
   dependencies:
     deepmerge: ^4.2.2
     escape-string-regexp: ^4.0.0
@@ -15106,7 +15157,7 @@ __metadata:
     is-plain-object: ^5.0.0
     parse-srcset: ^1.0.2
     postcss: ^8.3.11
-  checksum: 0cb2bb330ed966a4d667b1890322dd868a67f527f87c04d7e3be1688fcfda20f7452a9a7744870751f51e255742e7264a287d9bcfcd64d4cd74a3c99f99c73d2
+  checksum: 44807f22b0feb5a6a883b4bc04bcd8690ec3bbd6dacb24d6e52226ffe0c0e4fad43d6a882ce60e3884a327fae2de01e67e566e3a211491add50ff0160be2e98a
   languageName: node
   linkType: hard
 

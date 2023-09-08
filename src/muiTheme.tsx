@@ -141,7 +141,14 @@ export const theme = createTheme({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
-        // html: {},
+        html: {},
+        a: {
+          textDecoration: 'none',
+          color: 'inherit',
+          '&:hover': {
+            textDecoration: 'underline',
+          },
+        },
         // body: {
         //   p: 0,
         //   m: 0,

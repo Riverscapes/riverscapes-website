@@ -8,7 +8,7 @@ isHome: true
 
 import { Link, graphql } from "gatsby"
 
-import { Container, Divider, Grid, Card, CardActionArea, CardMedia, CardContent, Typography } from '@mui/material'
+import { Divider, Grid, Card, CardActionArea, CardMedia, CardContent, Typography } from '@mui/material'
 
 import HeroImage from '../../src/images/background-hero.jpg'
 import CardImage from '../../src/images/card-image.jpg'
@@ -27,7 +27,6 @@ import LogoUSGS from '../../src/images/logo-usgs.png'
 
 The Riverscapes Consortium is dedicated to changing the trajectory of this story by equipping members with what they need to help restore riverscapes around the world.        
 </Hero>
-<Container maxWidth="xl">
     <Grid container space={2}>
         <Grid item md={3} lg={2} />
         <Grid item xs={12} md={6}>
@@ -49,7 +48,8 @@ The Riverscapes Consortium is dedicated to changing the trajectory of this story
                 <Button to="/about-us/">Learn more about riverscapes</Button>
             </Grid>
         </Grid>
-      </Container>
+
+
       <HomepageCard>
         <HomepageCardContent background="blue">
             ## Solve
@@ -72,7 +72,7 @@ The Riverscapes Consortium is dedicated to changing the trajectory of this story
           {value: "27", label: "Label here"},
         ]} />
       </HomepageCard>
-      <Container maxWidth="xl">
+
         ### Stories & updates
         <Grid container spacing={4} sx={{mt: 3}}>
           <Grid item xs={12} md={6} lg={3}>
@@ -144,7 +144,7 @@ The Riverscapes Consortium is dedicated to changing the trajectory of this story
             </Card>
           </Grid>
         </Grid>
-      </Container>
+
       <HomepageCard>
         <HomepageCardContent background="white">
           ## Support
@@ -160,7 +160,7 @@ The Riverscapes Consortium is dedicated to changing the trajectory of this story
           label: 'Joe Wheaton, Utah State University'}
         ]}/>
       </HomepageCard>
-      <Container maxWidth="xl">
+
         <Divider>Our supporters</Divider>
         <Grid container spacing={4} justifyContent="center" alignItems="center" sx={{mt: 3}}>
           <Grid item xs={6} md={4} lg={2}>
@@ -182,7 +182,7 @@ The Riverscapes Consortium is dedicated to changing the trajectory of this story
             <img src={LogoALOGO} width="150" />
           </Grid>
         </Grid>
-      </Container>
+
       <HomepageCard>
         <HomepageCardContent background="blue">
             ## Who we are

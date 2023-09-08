@@ -20,8 +20,8 @@ import {
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight'
 import SearchIcon from '@mui/icons-material/Search'
-import SideNav from '../sideNav'
 import { MobileMenu } from '../../types'
+import SideNav from './SideNav'
 
 interface MainMenuProps {
   mobileMenuState: boolean
