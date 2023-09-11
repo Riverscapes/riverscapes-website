@@ -2,7 +2,7 @@
  * Footer component
  */
 
-import * as React from 'react'
+import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Container, Stack, Typography } from '@mui/material'
 

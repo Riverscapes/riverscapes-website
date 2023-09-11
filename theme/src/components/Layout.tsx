@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles'
 import { theme } from '../muiTheme'
 import Header from './Header'

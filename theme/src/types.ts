@@ -16,3 +16,9 @@ export type ThemeImagePaths<T> = {
   headerBorder: T
   backgroundHero: T
 }
+
+export type SiteManifest = {
+  name: string
+  short_name: string
+  start_url: string
+}

@@ -55,7 +55,7 @@
         "outFiles": [
           "${workspaceFolder}/site/.cache/**", 
           "${workspaceFolder}/site/public/**",
-          "${workspaceFolder}/theme/dist/**",
+          "${workspaceFolder}/theme/**",
         ],
         "runtimeArgs": ["--inspect=9229"],
       }

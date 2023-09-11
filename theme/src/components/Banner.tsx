@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { Box, Container, Typography } from '@mui/material'
 import background from '../images/background-banner.jpg'
 
@@ -22,8 +22,7 @@ const Banner: React.FC<BannerProps> = ({ title }) => {
         },
       }}
     >
-      <Container
-        maxWidth="xl"
+      <Box
         sx={{
           paddingLeft: 2,
           paddingRight: 2,
@@ -39,7 +38,7 @@ const Banner: React.FC<BannerProps> = ({ title }) => {
         >
           {title}
         </Typography>
-      </Container>
+      </Box>
     </Box>
   )
 }

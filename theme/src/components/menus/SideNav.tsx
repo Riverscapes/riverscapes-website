@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import Typography from '@mui/material/Typography'
 import TreeView from '@mui/lab/TreeView'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'

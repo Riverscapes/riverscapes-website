@@ -2,7 +2,7 @@
  * Card component
  */
 
-import * as React from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
 import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image'
 import { Box, Card, CardActionArea, CardContent, Typography } from '@mui/material'

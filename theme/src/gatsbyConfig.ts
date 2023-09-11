@@ -1,18 +1,28 @@
-import { GatsbyConfig } from 'gatsby'
+import path from 'path'
+import { SiteManifest } from './types'
 
-module.exports = ({ contentPath = `${__dirname}/content/page` }) =>
-  ({
+interface GatsbyConfigProps {
+  contentPath: string
+  manifest: SiteManifest
+}
+
+module.exports = ({ contentPath, manifest }: GatsbyConfigProps) => {
+  const srcRoot = path.resolve(path.join(__dirname))
+  if (!contentPath) throw new Error('contentPath is required')
+  if (!manifest) throw new Error('manifest is required')
+  console.log('Content Paths', { contentPath, srcRoot })
+  return {
     plugins: [
       `gatsby-plugin-image`,
       `gatsby-plugin-mdx-source-name`,
-      {
-        resolve: `gatsby-source-filesystem`,
-        options: {
-          name: `images`,
-          ignore: [`**/\.*`],
-          path: `./src/images`,
-        },
-      },
+      // {
+      //   resolve: `gatsby-source-filesystem`,
+      //   options: {
+      //     name: `images`,
+      //     ignore: [`**/\.*`],
+      //     path: `${srcRoot}/images`,
+      //   },
+      // },
       {
         resolve: `gatsby-source-filesystem`,
         options: {
@@ -51,19 +61,19 @@ module.exports = ({ contentPath = `${__dirname}/content/page` }) =>
       {
         resolve: `gatsby-plugin-sharp`,
         options: {
-          defaults: {
-            formats: [`auto`, `webp`],
-            placeholder: `dominantColor`,
-            quality: 50,
-            breakpoints: [750, 1080, 1366, 1920],
-            backgroundColor: `transparent`,
-            tracedSVGOptions: {},
-            blurredOptions: {},
-            jpgOptions: {},
-            pngOptions: {},
-            webpOptions: {},
-            avifOptions: {},
-          },
+          // defaults: {
+          //   formats: [`auto`, `webp`],
+          //   placeholder: `dominantColor`,
+          //   quality: 50,
+          //   breakpoints: [750, 1080, 1366, 1920],
+          //   backgroundColor: `transparent`,
+          //   tracedSVGOptions: {},
+          //   blurredOptions: {},
+          //   jpgOptions: {},
+          //   pngOptions: {},
+          //   webpOptions: {},
+          //   avifOptions: {},
+          // },
         },
       },
       {
@@ -77,8 +87,9 @@ module.exports = ({ contentPath = `${__dirname}/content/page` }) =>
           // https://css-tricks.com/meta-theme-color-and-trickery/
           // theme_color: `#663399`,
           display: `minimal-ui`,
-          icon: `./src/images/favicon/data-exchange-icon-64x64.png`, // This path is relative to the root of the site.
+          icon: `${srcRoot}/images/favicon/data-exchange-icon-64x64.png`, // This path is relative to the root of the site.
         },
       },
     ],
-  } as GatsbyConfig)
+  }
+}

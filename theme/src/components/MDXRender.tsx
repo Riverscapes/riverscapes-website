@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { MDXProvider } from '@mdx-js/react'
 import { Box, Divider, Stack, Grid, Typography, useTheme, Alert } from '@mui/material'
 import 'prismjs/themes/prism-dark.css'

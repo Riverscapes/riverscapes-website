@@ -2,7 +2,7 @@
  * LinkButton component
  */
 
-import * as React from 'react'
+import React from 'react'
 import { Button, ButtonProps } from '@mui/material'
 import { Link as GatsbyLink } from 'gatsby'
 

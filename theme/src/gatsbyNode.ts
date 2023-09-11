@@ -1,12 +1,11 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /**
  * Implement Gatsby's Node APIs in this file.
  *
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
  */
-
-import path from 'path'
-import { createFilePath } from 'gatsby-source-filesystem'
-import { GatsbyNode } from 'gatsby'
+const path = require('path')
+const { createFilePath } = require('gatsby-source-filesystem')
 
 const replacePath = (path) => (path === `/` ? path : path.replace(/\/$/, ``))
 
@@ -41,7 +40,8 @@ async function getResults({ graphql, reporter }) {
 const createIndividualPage = async ({ pages, gatsbyUtilities }) =>
   Promise.all(
     pages.map((page, index) => {
-      const templateFile = path.resolve(__dirname, '../templates/PageTemplate.tsx')
+      const templateFile = path.resolve(__dirname, '../src/templates/PageTemplate.tsx')
+
       // createPage is an action passed to createPages
       // See https://www.gatsbyjs.com/docs/actions#createPage for more info
       gatsbyUtilities.actions.createPage({
@@ -71,7 +71,6 @@ const createIndividualPage = async ({ pages, gatsbyUtilities }) =>
 /**
  * @type {import('gatsby').GatsbyNode['createPages']}
  */
-
 const createPages = async (gatsbyUtilities) => {
   // Query our posts from the GraphQL server
   const results = await getResults(gatsbyUtilities)
@@ -95,7 +94,7 @@ const onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-export default {
+module.exports = {
   createPages,
   onCreateNode,
-} as GatsbyNode
+}

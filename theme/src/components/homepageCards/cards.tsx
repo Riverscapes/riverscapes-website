@@ -2,7 +2,7 @@
  * HomepageCard component
  */
 
-import * as React from 'react'
+import React from 'react'
 import { Box, Grid, SxProps, useTheme } from '@mui/material'
 import bgImage from '../../images/background-homepagecard-content.jpg'
 

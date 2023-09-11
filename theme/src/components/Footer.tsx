@@ -2,7 +2,7 @@
  * Footer component
  */
 
-import * as React from 'react'
+import React from 'react'
 import { Link as GatsbyLink, useStaticQuery, graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import Menu from './menus/Menu'

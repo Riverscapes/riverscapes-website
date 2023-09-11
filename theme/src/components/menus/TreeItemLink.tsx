@@ -2,7 +2,7 @@
  * TreeItemLink component
  */
 
-import * as React from 'react'
+import React from 'react'
 import { navigate } from 'gatsby'
 import TreeItem, { TreeItemProps } from '@mui/lab/TreeItem'
 import { useTheme } from '@mui/material'
