@@ -1,12 +1,9 @@
+import { gatsbySSR } from './src/exports'
+
 /**
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
+ * Note: We import this from the theme file
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/
  */
 
-/**
- * @type {import('gatsby').GatsbySSR['onRenderBody']}
- */
-export const onRenderBody = ({ setHtmlAttributes }) => {
-  setHtmlAttributes({ lang: `en` })
-}
+export const onRenderBody = gatsbySSR.onRenderBody

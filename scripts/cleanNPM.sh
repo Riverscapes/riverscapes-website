@@ -12,4 +12,6 @@ fi
 
 rm yarn.lock
 rm -fr node_modules
+rm -fr public
+rm -fr .cache
 yarn install

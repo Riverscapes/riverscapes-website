@@ -32,7 +32,7 @@ const stylesThunk = (theme: Theme): Record<string, SxProps<Theme>> => ({
     background: theme.palette.background.default,
     boxShadow: theme.shadows[4],
     zIndex: 10,
-    '&>:nth-child(1)': {
+    '&>:nth-of-type(1)': {
       marginTop: 0,
     },
     '& > p': {

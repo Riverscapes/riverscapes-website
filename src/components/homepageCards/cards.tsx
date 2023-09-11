@@ -66,7 +66,7 @@ export const HomepageCardContent: React.FC<HomepageCardProps> = ({ children, bac
         pr: 22,
         pb: 12,
         paddingLeft: 'clamp(1rem, 25vw - 20.5rem, 12.5rem)',
-        '& :nth-child(1)': {
+        '& :nth-of-type(1)': {
           marginTop: 0,
         },
         '& *': {
