@@ -8,7 +8,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Menu from './menus/Menu'
 
 /* Content */
-import footerContent from '../../content/utilities/footer.json'
+import footerContent from '../content/utilities/footer.json'
 
 /* Footer style */
 import { Copyright } from './Copyright'

@@ -4,7 +4,7 @@
 
 import * as React from 'react'
 import { Box, Grid, SxProps, useTheme } from '@mui/material'
-import bgImage from './img/background-homepagecard-content.jpg'
+import bgImage from '../../images/background-homepagecard-content.jpg'
 
 /**
  * HomepageCard component

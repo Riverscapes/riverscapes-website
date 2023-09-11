@@ -1,5 +1,4 @@
 import { GatsbyConfig } from 'gatsby'
-import { pluginsCfg } from './src/gatsby/plugins'
 
 module.exports = {
   siteMetadata: {
@@ -71,5 +70,12 @@ module.exports = {
       },
     ],
   },
-  plugins: [...pluginsCfg(__dirname)],
+  plugins: [
+    {
+      resolve: '@riverscapes/gatsby-theme',
+      options: {
+        path: `${__dirname}/content/page`,
+      },
+    },
+  ],
 } as GatsbyConfig

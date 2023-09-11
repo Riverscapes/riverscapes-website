@@ -16,11 +16,10 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "sourceMap": true,
-    "target": "ES5"
+    "target": "ES5",
+    "outDir": "./dist"
   },
-  "include": [
-    "./src/**/*"
-  ],
+  "include": ["."],
   "exclude": [
     "**/dist/**",
     "node_modules",

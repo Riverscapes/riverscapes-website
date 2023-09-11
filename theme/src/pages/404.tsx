@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 
 interface NotFoundPageProps {
-  data: unknown
+  data: any
   location: Location
 }
 
