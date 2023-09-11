@@ -45,7 +45,7 @@ const defaultTheme = createTheme({
     },
     text: {
       primary: '#000', // --color-black
-      secondary: '#fff', // --color-white
+      secondary: '#606060', // --color-white
     },
     background: {
       default: '#f0f0f0', // --color-background-primary

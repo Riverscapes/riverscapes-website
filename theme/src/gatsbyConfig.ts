@@ -15,14 +15,14 @@ module.exports = ({ contentPath, manifest }: GatsbyConfigProps) => {
     plugins: [
       `gatsby-plugin-image`,
       `gatsby-plugin-mdx-source-name`,
-      // {
-      //   resolve: `gatsby-source-filesystem`,
-      //   options: {
-      //     name: `images`,
-      //     ignore: [`**/\.*`],
-      //     path: `${srcRoot}/images`,
-      //   },
-      // },
+      {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+          name: `images`,
+          ignore: [`**/\.*`],
+          path: `${srcRoot}/images`,
+        },
+      },
       {
         resolve: `gatsby-source-filesystem`,
         options: {

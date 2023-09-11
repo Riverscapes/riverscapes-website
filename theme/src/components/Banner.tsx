@@ -22,7 +22,7 @@ const Banner: React.FC<BannerProps> = ({ title }) => {
         },
       }}
     >
-      <Box
+      <Container
         sx={{
           paddingLeft: 2,
           paddingRight: 2,
@@ -38,7 +38,7 @@ const Banner: React.FC<BannerProps> = ({ title }) => {
         >
           {title}
         </Typography>
-      </Box>
+      </Container>
     </Box>
   )
 }

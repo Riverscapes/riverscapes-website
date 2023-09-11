@@ -66,15 +66,19 @@ export const HomepageCardContent: React.FC<HomepageCardProps> = ({ children, bac
         pr: 22,
         pb: 12,
         paddingLeft: 'clamp(1rem, 25vw - 20.5rem, 12.5rem)',
+        color: background === 'blue' ? 'white' : undefined,
         '& :nth-of-type(1)': {
           marginTop: 0,
         },
         '& *': {
-          color: background === 'blue' ? 'white' : 'inherit',
+          color: background === 'blue' ? 'white' : undefined,
+        },
+        '& a': {
+          color: '#eeeeee',
+          textDecoration: 'underline',
         },
         fontSize: theme.typography.pxToRem(16),
-        color: background === 'blue' ? 'white' : 'inherit',
-        backgroundColor: background === 'blue' ? 'black' : 'white',
+        backgroundColor: background === 'blue' ? 'black' : undefined,
         backgroundImage: background === 'blue' ? `url(${bgImage})` : undefined,
         backgroundSize: 'cover',
       }}

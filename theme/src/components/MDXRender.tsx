@@ -5,6 +5,7 @@ import 'prismjs/themes/prism-dark.css'
 // import Bio from "../components/bio"
 import Button from './RSLinkButton'
 import { RSLink } from './RSLink'
+import { StoryCard } from './StoryCard'
 import Hero from '../components/Hero'
 import { YoutubeEmbed } from '../components/YoutubeEmbed'
 import HomepageCard, { HomepageCardContent, HomepageCardHighlight, HomepageCardStat } from '../components/homepageCards'
@@ -24,6 +25,7 @@ const MDXRender: React.FC<React.PropsWithChildren> = ({ children }) => {
     Link: RSLink,
     Youtube: YoutubeEmbed,
     Box,
+    StoryCard,
     Stack,
     Grid,
     Alert,

@@ -34,7 +34,7 @@ const PageTemplate = ({ data: { site, mdx: page, allMdx: childPages }, children,
           <Typography
             variant="body2"
             sx={{
-              color: theme.palette.text.secondary,
+              color: 'white',
             }}
           >
             {card.frontmatter.blurb}
