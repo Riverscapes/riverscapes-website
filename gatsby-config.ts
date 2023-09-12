@@ -3,6 +3,7 @@ import { GatsbyConfig } from 'gatsby'
 module.exports = {
   siteMetadata: {
     title: `Riverscapes Consortium`,
+    helpWidgetId: "",
     author: {
       name: `Michael Kam`,
     },

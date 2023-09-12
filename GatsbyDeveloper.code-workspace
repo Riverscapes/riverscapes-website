@@ -1,7 +1,15 @@
 {
   "folders": [
     {
-      "name": "🏠 Home",
+      "name": "📜 Content",
+      "path": "./content/page"
+    },
+    {
+      "name": "🌄 Static",
+      "path": "./static"
+    },
+    {
+      "name": "🏠 Root",
       "path": "."
     }    
   ],
