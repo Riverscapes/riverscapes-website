@@ -1,6 +1,7 @@
 import { GatsbyConfig } from 'gatsby'
 
 module.exports = {
+  pathPrefix: '/riverscapes-website',
   siteMetadata: {
     title: `Riverscapes Consortium`,
     helpWidgetId: "",
