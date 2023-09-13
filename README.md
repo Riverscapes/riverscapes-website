@@ -1,3 +1,3 @@
-# Clean template site
+# Riverscapes Main Website
 
 TODO: INSERT INSTRUCTIONS ON USING AND DEPLOYING

@@ -6,10 +6,10 @@ module.exports = {
     title: `Riverscapes Consortium`,
     helpWidgetId: "",
     author: {
-      name: `Michael Kam`,
+      name: `Joe Wheaton`,
     },
     description: ``,
-    siteUrl: `https://riverscapes.net/`,
+    siteUrl: `https://riverscapes.github.io/riverscapes-website/`,
     social: {
       twitter: `RiverscapesC`,
     },
@@ -80,7 +80,7 @@ module.exports = {
         manifest: {
           name: `Riverscapes Consortium`,
           short_name: `Riverscapes`,
-          start_url: `/`,
+          start_url: `/riverscapes-website`,
         },
       },
     },
