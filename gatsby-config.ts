@@ -4,7 +4,8 @@ module.exports = {
   pathPrefix: '/riverscapes-website',
   siteMetadata: {
     title: `Riverscapes Consortium`,
-    helpWidgetId: "",
+    // Just leave this empty ('') if you don't want a help widget in the footer
+    helpWidgetId: '153000000178',
     author: {
       name: `Joe Wheaton`,
     },
