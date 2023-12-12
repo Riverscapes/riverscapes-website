@@ -2401,30 +2401,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/base@npm:5.0.0-beta.13":
-  version: 5.0.0-beta.13
-  resolution: "@mui/base@npm:5.0.0-beta.13"
-  dependencies:
-    "@babel/runtime": ^7.22.10
-    "@emotion/is-prop-valid": ^1.2.1
-    "@floating-ui/react-dom": ^2.0.1
-    "@mui/types": ^7.2.4
-    "@mui/utils": ^5.14.7
-    "@popperjs/core": ^2.11.8
-    clsx: ^2.0.0
-    prop-types: ^15.8.1
-    react-is: ^18.2.0
-  peerDependencies:
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  checksum: 3e42e64e14d37ccee7a2623c7759e118f22482ca04044b50be2cd02f5bd365a5ca588ca8e7361345e42ad8c9fcf03b79d61602a08f78ee2a1a6cc447fb1ed49d
-  languageName: node
-  linkType: hard
-
 "@mui/base@npm:5.0.0-beta.14":
   version: 5.0.0-beta.14
   resolution: "@mui/base@npm:5.0.0-beta.14"
@@ -2469,36 +2445,6 @@ __metadata:
     "@types/react":
       optional: true
   checksum: b4e73454b3ac22ccd78cb742d2a610c00494bf0fc5ffcae4133d40a6de92fd320553edbbe853e6595fd7565fa98fed97b9c2c733bc7e0a345a24527f699cc639
-  languageName: node
-  linkType: hard
-
-"@mui/lab@npm:5.0.0-alpha.142":
-  version: 5.0.0-alpha.142
-  resolution: "@mui/lab@npm:5.0.0-alpha.142"
-  dependencies:
-    "@babel/runtime": ^7.22.10
-    "@mui/base": 5.0.0-beta.13
-    "@mui/system": ^5.14.7
-    "@mui/types": ^7.2.4
-    "@mui/utils": ^5.14.7
-    clsx: ^2.0.0
-    prop-types: ^15.8.1
-    react-is: ^18.2.0
-  peerDependencies:
-    "@emotion/react": ^11.5.0
-    "@emotion/styled": ^11.3.0
-    "@mui/material": ^5.0.0
-    "@types/react": ^17.0.0 || ^18.0.0
-    react: ^17.0.0 || ^18.0.0
-    react-dom: ^17.0.0 || ^18.0.0
-  peerDependenciesMeta:
-    "@emotion/react":
-      optional: true
-    "@emotion/styled":
-      optional: true
-    "@types/react":
-      optional: true
-  checksum: 1d64b6dbaa4d46f19c0d0b034241a5ac10ce981123dcc5fb1c415a68fd9441a07f1ebcf30cc5975e93813e83d5a49084767e3afdd6ce77ed645888722661aa78
   languageName: node
   linkType: hard
 
@@ -2573,7 +2519,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/system@npm:^5.14.7, @mui/system@npm:^5.14.8":
+"@mui/system@npm:^5.14.8":
   version: 5.14.8
   resolution: "@mui/system@npm:5.14.8"
   dependencies:
@@ -2613,7 +2559,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/utils@npm:^5.14.7, @mui/utils@npm:^5.14.8":
+"@mui/utils@npm:^5.14.8":
   version: 5.14.8
   resolution: "@mui/utils@npm:5.14.8"
   dependencies:
@@ -3248,9 +3194,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@riverscapes/gatsby-theme@npm:latest":
-  version: 0.1.7
-  resolution: "@riverscapes/gatsby-theme@npm:0.1.7"
+"@riverscapes/gatsby-theme@npm:^0.1.8":
+  version: 0.1.8
+  resolution: "@riverscapes/gatsby-theme@npm:0.1.8"
   dependencies:
     "@emotion/react": ^11.11.0
     "@emotion/styled": ^11.11.0
@@ -3258,7 +3204,6 @@ __metadata:
     "@fontsource/karla": ^5.0.2
     "@mdx-js/react": ^2.3.0
     "@mui/icons-material": ^5.14.8
-    "@mui/lab": 5.0.0-alpha.142
     "@mui/material": ^5.14.8
     gatsby-plugin-image: ^3.10.0
     gatsby-plugin-manifest: ^5.10.0
@@ -3278,7 +3223,7 @@ __metadata:
     gatsby: ^5.10.0
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: 18e0064d3a0c0aa0de7d51691264ab8661ddfd21579979f1f39979ff66e52e392ff2b9f20530099294f991d448298c5f032a0d499f633ff4b1ed6e30a42e6597
+  checksum: 8ff63e7e7813085699c5b91ce317bf3c97f25a5cdd70b80a0f3f23b17a7cafe8052063a6e4dc5501d3897d396ed71864f1ca4742cb2eae3b08a83f48bdc0b5fe
   languageName: node
   linkType: hard
 
@@ -3286,7 +3231,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@riverscapes/website@workspace:."
   dependencies:
-    "@riverscapes/gatsby-theme": latest
+    "@riverscapes/gatsby-theme": ^0.1.8
     gatsby: ^5.10.0
     react: ^18.2.0
     react-dom: ^18.2.0
