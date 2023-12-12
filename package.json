@@ -6,7 +6,7 @@
   "license": "MIT",
   "author": "Matt Reimer <matt@northarrowresearch.com>",
   "dependencies": {
-    "@riverscapes/gatsby-theme": "^0.1.9",
+    "@riverscapes/gatsby-theme": "^0.1.11",
     "gatsby": "^5.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -22,7 +22,7 @@
     "build": "gatsby build --prefix-paths",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start:clean": "yarn clean; gatsby develop -p 8000",
-    "upgrade:theme": "yarn up @riverscapes/gatsby-theme",
+    "upgrade:theme": "yarn upgrade @riverscapes/gatsby-theme",
     "start": "gatsby develop -p 8000 -o",
     "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean",
