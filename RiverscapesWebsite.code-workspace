@@ -11,69 +11,40 @@
     {
       "name": "🏠 Root",
       "path": "."
-    }    
+    }
   ],
   "settings": {
-    "window.title": "riverscapes.net GATSBY -${separator}${activeEditorShort}${separator}${rootName}",
-    "jest.disabledWorkspaceFolders": [
-      "📖 Docs",
-      "📱 App",
-      "🧬 Schema",
-      "🏠 Home",
+    // TODO: Add your own site name here. Replace "GATSBYDOCS" with your site name or "QRiS Docs -" or whatever you want to see in the window title. 
+    "window.title": "GATSBYDOCS -${separator}${activeEditorShort}${separator}${rootName}",
+    "[mdx]": {
+      "editor.wordWrap": "on",
+      "editor.formatOnSave": false
+    },
+    "css.lint.validProperties": [
+      "composes"
     ],
-    "css.lint.validProperties": ["composes"],
     "workbench.colorCustomizations": {
-			"titleBar.activeBackground": "#001768",
+      "titleBar.activeBackground": "#001768",
       "sideBar.background": "#242132",
-			"editor.background": "#1e1c2c"
-		},
+      "editor.background": "#1e1c2c"
+    },
     "editor.tabSize": 2,
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "explicit"
     },
     "files.watcherExclude": {
-      "**/node_modules/**": true
+      "**/node_modules/**": true,
+      "**/.cache/**": true
     },
     "search.exclude": {
       "**/node_modules/**": true,
+      "**/.cache/**": true,
+      "**/public/**": true,
       "**/dist/**": true,
     },
     "files.exclude": {
       "**/node_modules/**": true
     }
-  },
-  "launch": {
-    "configurations": [
-      {
-        "type": "chrome",
-        "name": "Debug Using Chrome",
-        "request": "launch",
-        "url": "http://localhost:8000",
-        "sourceMaps": true,
-        "outFiles": [
-          "${workspaceFolder}/site/.cache/**", 
-          "${workspaceFolder}/site/public/**",
-          "${workspaceFolder}/theme/**",
-        ],
-      },
-      {
-        "type": "node",
-        "request": "launch",
-        "name": "Debug Gatsby Node API",
-        "console": "integratedTerminal",
-        "program": "${workspaceFolder}/node_modules/.bin/gatsby",
-        "runtimeExecutable": "${env:NVM_BIN}/node",
-        "args": ["develop"],
-        "sourceMaps": true,
-        "cwd": "${workspaceFolder}/site",
-        "outFiles": [
-          "${workspaceFolder}/site/.cache/**", 
-          "${workspaceFolder}/site/public/**",
-          "${workspaceFolder}/theme/**",
-        ],
-        "runtimeArgs": ["--inspect=9229"],
-      }
-    ]
   },
   "extensions": {
     "recommendations": [
