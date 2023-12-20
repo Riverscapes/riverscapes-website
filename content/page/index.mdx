@@ -40,7 +40,7 @@ The Riverscapes Consortium is dedicated to changing the trajectory of this story
     <Grid container space={2}>
         <Grid item md={5} lg={4} />
         <Grid item xs={12}  md={6}>
-            <img src={WhatIsRiverscape} />
+            <Image src={WhatIsRiverscape} />
         </Grid>
     </Grid>
     <Grid container space={2}>
@@ -178,22 +178,22 @@ The Riverscapes Consortium is dedicated to changing the trajectory of this story
     <Divider>Our supporters</Divider>
     <Grid container spacing={4} justifyContent="center" alignItems="center" sx={{mt: 3}}>
       <Grid item xs={6} md={4} lg={2}>
-        <img src={LogoUTAH} width="200"/>
+        <Image src={LogoUTAH} style={{width: 200 }}/>
       </Grid>
       <Grid item xs={6} md={4} lg={2}>
-        <img src={LogoNASA} width="130" />
+        <Image src={LogoNASA} style={{width: 130 }} />
       </Grid>
       <Grid item xs={6} md={4} lg={2}>
-        <img src={LogoNRDC} width="100" />
+        <Image src={LogoNRDC} style={{width: 100 }} />
       </Grid>
       <Grid item xs={6} md={4} lg={2}>
-        <img src={LogoUSGS} width="150" />
+        <Image src={LogoUSGS} style={{width: 150 }} />
       </Grid>
       <Grid item xs={6} md={4} lg={2}>
-        <img src={LogoLOGOBRAND} width="150" />
+        <Image src={LogoLOGOBRAND} style={{width: 150 }} />
       </Grid>
       <Grid item xs={6} md={4} lg={2}>
-        <img src={LogoALOGO} width="150" />
+        <Image src={LogoALOGO} style={{width: 150 }} />
       </Grid>
     </Grid>
 
@@ -206,11 +206,10 @@ The Riverscapes Consortium is dedicated to changing the trajectory of this story
         Our work advances the science, builds community, develops tools, and distributes data to increase capacity and knowledge, and inspire action.  
 
         
-        <Button 
-        to="/about-us/">Learn more about us</Button>
+        <Button to="/about-us/">Learn more about us</Button>
     </HomepageCardContent>
     <HomepageCardHighlight type="image">
-      <img src={CardImage} width="100%" />
+      <Image src={CardImage} />
     </HomepageCardHighlight>
 </HomepageCard>
 
