@@ -9,14 +9,6 @@ import { Container, Divider, Card, CardActionArea, CardMedia, CardContent, Typog
 
 import HeroImage from './background-hero.jpg'
 import CardImage from './card-image.jpg'
-import LogoNASA from './logo-nasa.png'
-import LogoALOGO from './logo-alogo.png'
-import LogoLOGOBRAND from './logo-logobrand.png'
-import LogoUTAH from './logo-utah_state.png'
-import LogoNRDC from './logo-nrdc.png'
-import LogoUSGS from './logo-usgs.png'
-import WhatIsRiverscape from './what-is-riverscape.jpg'
-
 
 <Hero image={HeroImage}>
 > We live on a planet dependent upon healthy riverscapes for both its and our survival.  
@@ -40,7 +32,7 @@ The Riverscapes Consortium is dedicated to changing the trajectory of this story
     <Grid container space={2}>
         <Grid item md={5} lg={4} />
         <Grid item xs={12}  md={6}>
-            <Image src={WhatIsRiverscape} />
+            <Image src="/images/what-is-riverscape.jpg" />
         </Grid>
     </Grid>
     <Grid container space={2}>
@@ -178,22 +170,22 @@ The Riverscapes Consortium is dedicated to changing the trajectory of this story
     <Divider>Our supporters</Divider>
     <Grid container spacing={4} justifyContent="center" alignItems="center" sx={{mt: 3}}>
       <Grid item xs={6} md={4} lg={2}>
-        <Image src={LogoUTAH} width="200px"/>
+        <Image src="/images/logo-utah_state.png" width="200px"/>
       </Grid>
       <Grid item xs={6} md={4} lg={2}>
-        <Image src={LogoNASA} width="130px" />
+        <Image src="/images/logo-nasa.png" width="130px" />
       </Grid>
       <Grid item xs={6} md={4} lg={2}>
-        <Image src={LogoNRDC} width="100px" />
+        <Image src="/images/logo-nrdc.png" width="100px" />
       </Grid>
       <Grid item xs={6} md={4} lg={2}>
-        <Image src={LogoUSGS} width="150px" />
+        <Image src="/images/logo-usgs.png" width="150px" />
       </Grid>
       <Grid item xs={6} md={4} lg={2}>
-        <Image src={LogoLOGOBRAND} width="150px" />
+        <Image src="/images/logo-logobrand.png" width="150px" />
       </Grid>
       <Grid item xs={6} md={4} lg={2}>
-        <Image src={LogoALOGO} width="150px" />
+        <Image src="/images/logo-alogo.png" width="150px" />
       </Grid>
     </Grid>
 
